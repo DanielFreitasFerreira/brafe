@@ -163,7 +163,10 @@
 	.assine-info, .assine form, .assine input {
 		width: 300px;
 		margin: 10px 0 0 0;
-	}
+  }
+  .assine button {
+    width: 300px;
+  }
 }
 
 /* Footer */

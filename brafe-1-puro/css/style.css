@@ -99,6 +99,9 @@ a.menu-logo {
 	.intro {
 		padding: 60px 0;
 	}
+	.intro h1 {
+		font-size: 2rem;
+	}
 }
 
 /* Sobre */
@@ -189,6 +192,9 @@ a.menu-logo {
 	.sobre-item {
 		width: 300px;
 		margin: 0 auto;
+	}
+	.sobre p {
+		max-width: 340px;
 	}
 }
 
