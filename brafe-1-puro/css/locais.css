@@ -1,0 +1,208 @@
+/* Locais */
+.locais {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.locais-zoom {
+  overflow: hidden;
+}
+.locais-zoom img {
+  max-width: 100%;
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.locais-zoom:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.locais-item {
+  clear: both;
+  margin: 60px auto;
+}
+.locais-item::after,
+.locais-item::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+.locais-item img {
+  max-width: 460px;
+  display: block;
+  float: left;
+  margin: 0 10px;
+}
+.locais-item > div {
+  width: 460px;
+  float: left;
+  margin: 0 10px;
+}
+.locais-item h2 {
+  font-size: 2.25em;
+  margin-bottom: 20px;
+}
+.locais-item p {
+  font-size: 1.125em;
+  line-height: 1.4em;
+  max-width: 320px;
+  margin-bottom: 40px;
+}
+.locais-item a {
+  font-size: 1.125em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 3px solid;
+  color: #252525;
+  padding: 10px 20px;
+}
+.locais-item a:hover {
+  color: #d7a54c;
+	border-color: #d7a54c;
+	transition: .2s linear;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+	.locais {
+		max-width: 720px;
+	}
+	.locais-item > div, .locais-item img {
+		width: 340px;
+	}
+}
+
+@media (max-width: 739px) {
+	.locais {
+		max-width: 300px;
+	}
+	.locais-item > div, .locais-item img {
+		width: 300px;
+		margin: 0px;
+	}
+}
+
+
+/* Assine */
+.assine {
+  background: #e7e4d8;
+  border-top: 4px solid #d1cdbe;
+  border-bottom: 4px solid #d1cdbe;
+  padding: 30px 0;
+}
+.assine-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.assine-container::after,
+.assine-container::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.assine-info {
+  width: 460px;
+  margin: 0 10px;
+  float: left;
+}
+
+.assine-info h2 {
+  font-size: 2.25em;
+}
+
+.assine-info p {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.assine-form {
+  width: 460px;
+  margin: 10px 10px 0 10px;
+  float: left;
+}
+.assine form label {
+  display: none;
+}
+.assine input {
+  width: 320px;
+  border: 3px solid #252525;
+  background: none;
+  font-size: 1.5em;
+  font-style: italic;
+  font-family: Georgia, serif;
+  padding: 10px;
+  float: left;
+}
+.assine button {
+  background: #252525;
+  border: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding: 13px 0;
+  width: 140px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+	.assine-container {
+		max-width: 720px;
+	}
+	.assine-info, .assine form, .assine input {
+		width: 340px;
+	}
+}
+
+@media (max-width: 739px) {
+	.assine-container {
+		max-width: 300px;
+	}
+	.assine-info, .assine form, .assine input {
+		width: 300px;
+		margin: 10px 0 0 0;
+	}
+}
+
+/* Footer */
+.footer {
+  background: #d6d3c8;
+  padding: 40px 0;
+}
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.footer-container::after,
+.footer-container::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+.footer p {
+  float: left;
+  margin: 0 10px;
+  font-size: 1.125em;
+  line-height: 1.4em;
+}
+.footer img {
+  float: right;
+  display: block;
+  margin:  0 10px;
+}
+
+@media (max-width: 739px) {
+	.footer-container {
+		max-width: 300px;
+	}
+	.footer p {
+		float: none;
+		margin: 0px;
+	}
+	.footer img {
+		float: none;
+		margin: 20px 0;
+	}
+}
