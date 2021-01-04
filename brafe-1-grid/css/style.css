@@ -98,6 +98,11 @@ img {
 	margin-bottom: 3.75rem;
 	padding: 60px 0;
 }
+.sobre-line-left {
+	position: absolute;
+	bottom: -61.75rem;
+	left: -29rem;
+}
 .sobre h2 {
 	font-size: 2.25em;
 	text-align: center;
@@ -127,11 +132,20 @@ img {
 	margin: 20px auto;
 	text-align: center;
 }
-
+@media (min-width: 740px) and (max-width: 1200px) {
+	.sobre-line-left {
+		position: absolute;
+		/* top: 0px; */
+		bottom: -628px;
+	}
+}
 @media (max-width: 739px) {
 	.sobre {
 		margin-top: 2.86rem;
 		margin-bottom: 3.75rem;
+	}
+	.sobre-line-left {
+		display: none;
 	}
 	.sobre h2 {
 		text-align: center;
@@ -260,6 +274,9 @@ h2.produtos-mineiro::before {
 .locais-item {
 	margin-top: 40px;
 	margin-bottom: 40px;
+}
+.locais-line-right {
+	position: absolute;
 }
 .locais-item h2 {
 	font-size: 2.25em;
