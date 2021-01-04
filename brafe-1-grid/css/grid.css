@@ -64,6 +64,10 @@
   width: calc(100% - 20px);
 }
 
+@media (min-width: 740px) and (max-width: 980px) {
+	
+}
+
 @media (max-width: 739px) {
   .container {
     max-width: 300px;
@@ -85,4 +89,5 @@
     margin-right: 0px;
     float: none;
   }
+  
 }
