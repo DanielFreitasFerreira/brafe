@@ -1,7 +1,8 @@
 /* Menu */
 
 .menu {
-	background: #252525;
+  background: #252525;
+  padding: 15px 0;
 }
 
 .menu-nav a {
@@ -9,9 +10,15 @@
 	color: #fff;
 	font-size: 1.125em;
 }
-.menu-container {
-  display: flex;
+.menu-nav {
+  flex: 1;
+  align-self: center;
 }
-.menu-logo {
-
+.menu-nav ul {
+  display: flex;
+  float: right;
+  list-style: none;
+}
+.menu-nav ul li a {
+  padding: 10px;
 }
