@@ -10,9 +10,13 @@
 	color: #fff;
 	font-size: 1.125em;
 }
+.menu-logo {
+  margin: 0 10px;
+}
 .menu-nav {
   flex: 1;
   align-self: center;
+  margin: 0 10px;
 }
 .menu-nav ul {
   display: flex;
@@ -21,4 +25,15 @@
 }
 .menu-nav ul li a {
   padding: 10px;
+}
+@media only screen and (max-width: 739px) {
+  .container {
+    flex-direction: column;
+    max-width: 350px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .menu-nav ul li a {
+    font-size: 16px;
+  }
 }

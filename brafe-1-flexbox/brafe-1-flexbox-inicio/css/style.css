@@ -17,7 +17,7 @@ body {
 .container {
   display: flex;
   max-width: 960px;
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 /* Intro */
@@ -47,6 +47,22 @@ body {
 .intro p {
 	font-style: italic;
 	font-size: 1.125em;
+}
+
+@media only screen and (max-width: 739px) {
+  .menu-logo {
+    text-align: center;
+		margin-bottom: 10px;
+  }
+  .intro {
+    padding: 60px;
+  }
+  .intro h1 {
+    font-size: 30px;
+  }
+  .menu-nav ul li a {
+    font-size: 16px;
+	}
 }
 
 /* Sobre */
