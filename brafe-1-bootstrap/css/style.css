@@ -23,6 +23,7 @@ img {
 
 .menu {
 	background: #252525;
+	padding: 15px 0 15px 0;
 }
 
 .menu-nav a {
@@ -31,12 +32,38 @@ img {
 	font-size: 1.125em;
 }
 
+.menu-nav ul {
+	float: right;
+	list-style: none;
+	display: flex;
+}
+.menu-nav ul li a {
+	display: inline-block;
+	padding: 10px;
+	margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+	.menu-nav ul {
+		float: none;
+	}
+	.menu-nav ul li a {
+		padding-left: 0px;
+		margin-left: 0px;
+	}
+	.menu-logo {
+		margin: 0 auto;
+	}
+}
+
 /* Intro */
 
 .intro {
 	background: url('../img/bg-intro.jpg') no-repeat center center;
 	background-size: cover;
 	color: #fff;
+	padding: 150px 0;
+	text-align: center;
 }
 
 .intro h1 {
@@ -50,6 +77,8 @@ img {
 	width: 20px;
 	height: 4px;
 	background: #fff;
+	margin: 20px auto;
+	font-weight: bold;
 }
 
 .intro p {
@@ -57,10 +86,32 @@ img {
 	font-size: 1.125em;
 }
 
-/* Sobre */
+@media (max-width: 768px) {
+	.intro  {
+		padding: 60px 0;
+	}
+	.intro h1 {
+		font-size: 2.5rem;
+	}
+}
+@media (max-width: 520px) {
+	.intro {
+		padding: 40px 0;
+	}
+	.intro h1 {
+		font-size: 1.8rem;
+	}
+}
 
+/* Sobre */
+.sobre {
+	padding: 60px 0;
+}
 .sobre h2 {
 	font-size: 2.25em;
+	text-align: center;
+	padding-bottom: 60px;
+	font-weight: bold;
 }
 
 .sobre-item h3 {
@@ -72,12 +123,38 @@ img {
 	font-weight: normal;
 	text-align: center;
 	position: relative;
+	width: 220px;
+	padding: 5px 0 10px 0;
+	top: -25px;
 }
 
 .sobre > p {
 	font-size: 1.125em;
 	line-height: 1.4em;
 	font-style: italic;
+	max-width: 455px;
+	text-align: center;
+	margin: 0 auto;
+}
+@media (min-width: 491px) and (max-width: 575px) {
+	.sobre-item img {
+		margin: 0 auto;
+	}
+	.sobre p {
+		max-width: 455px;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 490px) {
+	.sobre-item {
+		margin: 0px 15px 0 15px;
+	}
+	.sobre p {
+		max-width: 455px;
+		text-align: center;
+		margin: 0 auto;
+	}
 }
 
 /* Produtos */
@@ -86,10 +163,19 @@ img {
 	background: #e7e4d8;
 	border-top: 3px solid #d6d3c8;
 	border-bottom: 3px solid #d6d3c8;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.produtos-item {
+	margin-bottom: 40px;
 }
 
 .produtos-item h2 {
 	font-size: 2.25em;
+	text-align: center;
+	padding-bottom: 20px;
+	font-weight: bold;
 }
 
 .produtos-item h2::before {
@@ -101,6 +187,8 @@ img {
 	border-radius: 50%;
 	border: 5px solid #e7e4d8;
 	box-shadow: 0 0 0 5px currentColor;
+	margin: 20px auto;
+	padding-bottom: 20px;
 }
 
 h2.produtos-paulista::before {
@@ -118,6 +206,7 @@ h2.produtos-mineiro::before {
 .produtos-item p {
 	font-size: 0.875em;
 	line-height: 1.4em;
+	text-align: center;
 }
 
 .produtos-btn {
@@ -128,17 +217,67 @@ h2.produtos-mineiro::before {
 	font-size: 1.125em;
 	font-weight: bold;
 	text-transform: uppercase;
+	width: 180px;
+	display: block;
+	margin: 20px auto 0 auto;
+	padding: 15px 0;
+}
+.produtos-btn:hover {
+	text-decoration: none;
+	color: #c17139;
+	border-color: #c17139;
+}
+@media (min-width: 491px) and (max-width: 575px) {
+	.produtos-item p {
+		text-align: center;
+	}
+	.produtos-item h2::before {
+		margin: 20px auto;
+		padding-bottom: 20px;
+	}
+	.produtos-item h2 {
+		padding-bottom: 20px;
+		font-weight: bold;
+	}
+	.produtos-item p {
+		text-align: center;
+	}
+}
+@media (max-width: 490px) {
+	.produtos-item p {
+		text-align: center;
+	}
+	.produtos-item h2 {
+		padding-bottom: 20px;
+		font-weight: bold;
+	}
+	.produtos-item h2::before {
+		margin: 20px auto;
+	}
+	.produtos-item p {
+		text-align: center;
+	}
 }
 
 /* Locais */
-
+.locais {
+	padding: 60px 0;
+}
+.locais-item {
+	margin-bottom: 40px;
+}
 .locais-item h2 {
 	font-size: 2.25em;
+	margin-bottom: 20px;
+	font-weight: bold;
 }
 
 .locais-item p {
 	font-size: 1.125em;
 	line-height: 1.4em;
+	margin-bottom: 20px;
+	max-width: 320px;
+	margin-bottom: 30px;
 }
 
 .locais-item a {
@@ -147,6 +286,21 @@ h2.produtos-mineiro::before {
 	text-decoration: none;
 	border: 3px solid;
 	color: #252525;
+	padding: 10px 20px;
+}
+@media (max-width: 575px) {
+	.locais-item {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.locais-item h2 {
+		margin-top: 20px;
+		text-align: center;
+	}
+	.locais-item p {
+		margin: 0 auto;
+		text-align: center;
+	}
 }
 
 /* Assine */
