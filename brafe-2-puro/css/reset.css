@@ -1,0 +1,21 @@
+body,
+p,
+h1, h2,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #252525;
+}
+
+* {
+  box-sizing: border-box;
+}

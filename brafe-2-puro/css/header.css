@@ -1,0 +1,10 @@
+.header__information {
+  background-color: #d6d3c8;
+  font-size: 0.875em;
+  padding: 5px 0;
+  text-align: center;
+}
+.header__logo img {
+  display: block;
+  margin: 40px auto;
+}
