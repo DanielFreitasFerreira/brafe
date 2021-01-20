@@ -8,3 +8,27 @@
   display: block;
   margin: 40px auto;
 }
+.header__menu {
+  border-top: 3px solid #d6d3c8;
+  border-bottom: 3px solid #d6d3c8;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px 0;
+}
+.header__menu li {
+  display: inline-block;
+}
+.header__menu li a {
+  color: #252525;
+  display: block;
+  font-size: 1.125em;
+  padding: 5px 10px 5px 0;
+  text-decoration: none;
+}
+.header__menu li a::before {
+  content: '•';
+  padding-right: 10px;
+}
+.header__menu li:first-child a::before {
+  content: '';
+}
