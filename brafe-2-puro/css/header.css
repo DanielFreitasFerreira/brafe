@@ -21,9 +21,9 @@
 .header__menu li a {
   color: #252525;
   display: block;
-  font-size: 1.125em;
   padding: 5px 10px 5px 0;
   text-decoration: none;
+  font-size: 1.125em;
 }
 .header__menu li a::before {
   content: '•';

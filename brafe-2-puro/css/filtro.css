@@ -1,0 +1,69 @@
+/* Conteúdo geral filtro */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Filtro */
+.filtro {
+  background-color: #e7e4d8;
+  border: 3px solid #d6d3c8;
+  width: 300px;
+  margin: 0 10px;
+  padding: 20px;
+  float: left;
+}
+
+.filtro h2 {
+  font-size: 1.125em;
+  padding: 10px 0;
+}
+.filtro ul {
+  border-top: 3px solid #c0beb4;
+  border-bottom: 3px solid #c0beb4;
+  padding: 10px 0;
+}
+.filtro li {
+  font-style: italic;
+  font-size: 1.125em;
+  line-height: 2;
+}
+.filtro li::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #c0beb4;
+  float: right;
+  margin-top: 5px;
+}
+.sabor {
+  overflow: hidden;
+}
+.sabor span {
+  text-indent: -200px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: currentColor;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.sabor-three {
+  color: #492901;
+  box-shadow: 20px 0 0 0 currentColor,
+              40px 0 0 0 currentColor;
+}
+.sabor-four {
+  color: #c17139;
+  box-shadow: 20px 0 0 0 currentColor,
+              40px 0 0 0 currentColor,
+              60px 0 0 0 currentColor;
+}
+.sabor-five {
+  color: #d7a54d;
+  box-shadow: 20px 0 0 0 currentColor,
+              40px 0 0 0 currentColor,
+              60px 0 0 0 currentColor,
+              80px 0 0 0 currentColor;
+}
