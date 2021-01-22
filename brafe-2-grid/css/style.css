@@ -158,6 +158,13 @@ body {
 	font-weight: normal;
 }
 
+@media (max-width: 739px) {
+	.produtos h1 {
+		text-align: center;
+    margin-top: 20px;
+	}
+}
+
 .footer {
 	background: #e7e4d8;
 	text-align: center;
