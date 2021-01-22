@@ -167,6 +167,13 @@ body {
 	margin-top: 80px;
 }
 
+@media (max-width: 500px) {
+	.footer div {
+		max-width: 313px;
+    margin: 0 auto;
+	}
+}
+
 
 
 

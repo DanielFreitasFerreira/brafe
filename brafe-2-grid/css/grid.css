@@ -20,7 +20,8 @@
 .col-9,
 .col-10,
 .col-11,
-.col-12 {
+.col-12,
+.col-mobile-6 {
   margin-left: 10px;
   margin-right: 10px;
   float: left;
@@ -64,8 +65,19 @@
   width: calc(100% - 20px);
 }
 
-@media (min-width: 740px) and (max-width: 980px) {
-	
+.col-mobile-6 {
+  width: calc(50% - 20px);
+}
+
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.row::after, 
+.row::before {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 @media (max-width: 739px) {
@@ -89,5 +101,8 @@
     margin-right: 0px;
     float: none;
   }
-  
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
