@@ -35,3 +35,20 @@
   font-size: 0.875em;
   font-weight: normal;
 }
+
+@media (min-width: 740px) and (max-width: 980px) {
+  .produtos {
+    width: 460px;
+  }
+  .produtos li {
+    width: 220px;
+  }
+}
+@media (max-width: 739px) {
+  .produtos {
+    width: 400px;
+  }
+  .produtos li {
+    width: 140px;
+  }
+}

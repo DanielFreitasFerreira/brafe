@@ -10,6 +10,17 @@
   clear: both;
 }
 
+@media (min-width: 740px) and (max-width: 980px) {
+  .contaienr {
+    max-width: 720px;
+  }
+}
+@media (max-width: 739px) {
+  .container {
+    max-width: 300px;
+  }
+}
+
 /* Filtro */
 .filtro {
   background-color: #e7e4d8;
@@ -43,6 +54,24 @@
   float: right;
   margin-top: 5px;
 }
+
+@media (min-width: 740px) and (max-width: 980px) {
+  .contaienr {
+    max-width: 720px;
+  }
+  .filtro {
+    width: 220px;
+  }
+}
+@media (max-width: 739px) {
+  .container {
+    max-width: 300px;
+  }
+  .filtro {
+    margin-right: 50px;
+  }
+}
+
 .sabor {
   overflow: hidden;
 }
