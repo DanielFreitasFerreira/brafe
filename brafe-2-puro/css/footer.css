@@ -1,0 +1,17 @@
+.footer {
+  border-top: 3px solid #d6d3c8;
+  background-color: #e7e4d8;
+  text-align: center;
+  padding: 60px 0;
+  font-size: 1.125em;
+  line-height: 1.4em;
+  margin-top: 80px;
+}
+.footer p {
+  max-width: 700px;
+  float: left;
+  padding-right: 180px;
+}
+.footer__logo {
+  float: right;
+}
