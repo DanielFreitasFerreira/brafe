@@ -76,3 +76,27 @@
   flex: 0 0 calc(100% - 20px);
   max-width: calc(100% - 20px);
 }
+
+@media (max-width: 739px) {
+  .flex {
+    max-width: 300px;
+    flex-direction: column;
+  }
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12,
+  .col-mobile-6 {
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width: 100%;
+    align-self: auto;
+  }
+}
