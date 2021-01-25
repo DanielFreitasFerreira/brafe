@@ -1,5 +1,10 @@
 /* Main */
-
+.main-container::after,
+.main-container::before {
+  content: '';
+  display: table;
+  clear: both;
+}
 
 /* Side nav */
 .main-sidenav {
