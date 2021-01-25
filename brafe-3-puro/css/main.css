@@ -1,0 +1,46 @@
+/* Main */
+
+
+/* Side nav */
+.main-sidenav {
+  background: #252525;
+  width: 300px;
+  float: left;
+}
+.main-sidenav li a {
+  display: block;
+  color: #fff;
+  border-bottom: 2px solid #484846;
+  font-size: 1.125em;
+  padding: 20px;
+}
+.main-sidenav li a::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 5px;
+  margin-right: 15px;
+  background-image: url(../img/icones.png);
+}
+
+.main-contabilidade::before {
+  background-position: 0 0;
+}
+
+.main-paginas::before {
+  background-position: 0 -48px;
+}
+
+.main-plugins::before {
+  background-position: 0 -72px;
+}
+
+.main-formulario::before {
+  background-position: 0 -96px;
+}
+
+.main-hospedagens::before {
+  background-position: 0 -120px;
+}
