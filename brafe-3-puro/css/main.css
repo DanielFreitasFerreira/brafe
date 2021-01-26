@@ -1,16 +1,11 @@
 /* Main */
-.main-container::after,
-.main-container::before {
-  content: '';
-  display: table;
-  clear: both;
+.main-container {
+  display: flex;
 }
-
 /* Side nav */
 .main-sidenav {
   background: #252525;
   width: 300px;
-  float: left;
 }
 .main-sidenav li a {
   display: block;
