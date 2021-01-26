@@ -44,3 +44,37 @@
 .main-hospedagens::before {
   background-position: 0 -120px;
 }
+
+@media (min-width: 739px) and (max-width: 980px) {
+  .main-sidenav {
+    width: 200px;
+  }
+}
+@media (max-width: 739px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .main-sidenav {
+    margin:  20px 0 0 20px;
+    background: none;
+    width: auto;
+  }
+  .main-sidenav li {
+    display: inline-block;
+  }
+  .main-sidenav li a::before {
+    display: block;
+    top: 0;
+    margin: 0;
+  }
+  .main-sidenav li a {
+    color: #252525;
+    background: #252525;
+    border-radius: 5px;
+    border: none;
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    padding: 10px;
+  }
+}

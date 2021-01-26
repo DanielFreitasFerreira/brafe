@@ -4,12 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brafe 3 - Puro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
     <a class="header-logo" href="#">
       <img src="./img/brafe.png" alt="logo">
+    </a>
+
+    <!-- icone menu -->
+    <a href="#" class="menu">
+      <i class="fa fa-bars"></i>
     </a>
 
     <nav class="header-menu">
@@ -107,5 +113,12 @@
   <footer class="footer">
     <p>Este é um projeto da Origamid, com o objetivo focar em posionamento com CSS.</p>
   </footer>
+
+  <script>
+    const menu = document.querySelector('.menu');
+    menu.addEventListener('click', function() {
+      this.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
